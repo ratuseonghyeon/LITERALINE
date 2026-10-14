@@ -1,10 +1,3 @@
-<?php
-include 'koneksi.php';
-
-$query = mysqli_query($koneksi, "SELECT * FROM users WHERE id = 1");
-$user = mysqli_fetch_assoc($query);
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 
@@ -45,7 +38,7 @@ $user = mysqli_fetch_assoc($query);
             <div class="profile-photo">
 
                 <img
-                    src="images/profile/<?php echo $user['foto']; ?>"
+                    src="images/profile/ echo $user['foto']; ?"
                     alt="Foto Profile"
                 >
 
@@ -56,15 +49,15 @@ $user = mysqli_fetch_assoc($query);
             <div class="profile-info">
 
                 <h1>
-                    <?php echo $user['nama']; ?>
+                    <echo $user['nama']; >
                 </h1>
 
                 <p class="username">
-                    <?php echo $user['username']; ?>
+                    <echo $user['username']; >
                 </p>
 
                 <p class="bio">
-                    <?php echo $user['bio']; ?>
+                    <echo $user['bio']; >
                 </p>
 
                 <button class="edit-btn">
